@@ -18,7 +18,6 @@ Now, save LS into a variable
 `let ls = LS`<br/>
 <br/>
 
-
 ####  You can be happy with these methods()
 
 • **SET**
