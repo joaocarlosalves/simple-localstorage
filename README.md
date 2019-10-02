@@ -1,17 +1,19 @@
 #What is that?
 
-Simple Local Storage it's just a simple HTML5/JS Local Storage things to store and get stuff!
+Simple Local Storage it's just a simple HTML5/JS Local Storage things to store and get stuff!  
+
 
 #Installing
 
-`npm i simple-localstorage`
+`npm i simple-localstorage`  
+
 
 #Usage
 
 First thing is import LS
 `import LS from './ls'`
 
-Save into a variable
+Now, save into a variable
 `let ls = LS`
 
 
