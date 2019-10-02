@@ -1,42 +1,42 @@
-# What is that?
+## What is that?
 
-Simple Local Storage it's just a simple HTML5/JS Local Storage things to store and get stuff!  
-<br/><br/>
+Simple Local Storage it's just a HTML5/JS Local Storage "things" to store and get stuff!
+<br/>
 
-# Installing
+## Installing
 
 `npm i simple-localstorage`  
-<br/><br/>
+<br/>
 
-# Usage
+## Usage
 
-First thing is import LS<br/>
+First thing is import LS
 `import LS from './ls'`
-<br/><br/>
+<br/>
 
-Now, save LS into a variable<br/>
+Now, save LS into a variable
 `let ls = LS`<br/>
-<br/><br/>
+<br/>
 
 
-### Now you can be happy with these methods():<br/>
+####  You can be happy with these methods()
 
-• **SET**<br/>
-Insert one item like an json object or some variable passing its name as string type and the object itself as parameter<br/>
+• **SET**
+Insert one item like a json object or some variable passing its name as string type and the object itself as parameter<br/>
 `ls.set("itemName", itemContent)`
-<br/><br/>
+<br/>
 
-• **GET**<br/>
+• **GET**
 Get one item passing its name as string parameter<br/>
 `ls.set("itemName", itemContent)`
-<br/><br/>
+<br/>
 
-• **DELETE**<br/>
+• **DELETE**
 Delete one item passing its name in string format as parameter<br/>
 `ls.delete("itemName")`
-<br/><br/>
+<br/>
 
-• **CLEAR**<br/>
+• **CLEAR**
 ...and all storage is gone! Forever...<br/>
 `ls.clear()`
 <br/><br/>
