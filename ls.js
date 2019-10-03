@@ -29,6 +29,6 @@ let LS = () => {
         ){ return false; } 
         return true;
     }
-};
+}
 
-module.exports = new LS;
+module.exports.LS = LS;

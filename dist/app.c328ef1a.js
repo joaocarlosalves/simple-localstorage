@@ -155,8 +155,8 @@ var LS = function LS() {
   };
 };
 
-module.exports = new LS();
-},{}],"scripts.js":[function(require,module,exports) {
+module.exports.LS = LS;
+},{}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _ls = _interopRequireDefault(require("./ls"));
@@ -165,23 +165,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var ls = _ls.default;
 ls.clear();
-var name = "John Doe";
-var person = {
-  "name": name,
-  "adress": ["256, Rounded Square Avenue", "New York", "NY"],
-  "age": 36,
-  "email": "john@doe.com"
-};
-ls.set('name', name);
-ls.set('person_object', person);
-console.log(ls.get('name'));
-setTimeout(function () {
-  if (ls.check('person_object')) {
-    console.log(ls.get('person_object'));
-  } else {
-    console.log("Local Storage item not found");
-  }
-}, 1000);
+ls.set('232323', '123123123');
 },{"./ls":"ls.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -210,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62108" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49417" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -385,5 +369,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts.js"], null)
-//# sourceMappingURL=/scripts.b71a6038.js.map
+},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
+//# sourceMappingURL=/app.c328ef1a.js.map

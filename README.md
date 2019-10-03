@@ -1,6 +1,6 @@
 ## What is that?
 
-Simple Local Storage it's just a HTML5/JS Local Storage "things" to store and get stuff!
+Tiny "LS" Local Storage it's just a HTML5/JS Local Storage "things" to store and get stuff!
 <br/>
 
 ## Installing
@@ -11,7 +11,7 @@ Simple Local Storage it's just a HTML5/JS Local Storage "things" to store and ge
 ## Usage
 
 First thing is import LS<br/>
-`import LS from './ls'`
+`import LS from 'tiny-localstorage';`
 <br/>
 
 Now, save LS into a variable<br/>

@@ -118,63 +118,42 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"ls.js":[function(require,module,exports) {
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+"use strict";
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+var LS = function LS() {
+  LS.prototype.get = function (what) {
+    return JSON.parse(localStorage.getItem(what));
+  };
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var LS =
-/*#__PURE__*/
-function () {
-  function LS() {
-    _classCallCheck(this, LS);
-  }
-
-  _createClass(LS, [{
-    key: "get",
-    value: function get(what) {
-      return JSON.parse(localStorage.getItem(what));
-    }
-  }, {
-    key: "set",
-    value: function set(where, what) {
-      localStorage.setItem(where, JSON.stringify(what));
-      setInterval(function () {
-        return true;
-      }, 100);
-    }
-  }, {
-    key: "delete",
-    value: function _delete(what) {
-      localStorage.removeItem(what);
-      setInterval(function () {
-        return true;
-      }, 100);
-    }
-  }, {
-    key: "clear",
-    value: function clear() {
-      localStorage.clear();
-      setInterval(function () {
-        return true;
-      }, 100);
-    }
-  }, {
-    key: "check",
-    value: function check(what) {
-      if (!localStorage.getItem(what) || localStorage.getItem(what) === '' || localStorage.getItem(what) === 'undefined' || localStorage.getItem(what) === null) {
-        return false;
-      }
-
+  LS.prototype.set = function (where, what) {
+    localStorage.setItem(where, JSON.stringify(what));
+    setInterval(function () {
       return true;
+    }, 100);
+  };
+
+  LS.prototype.delete = function (what) {
+    localStorage.removeItem(what);
+    setInterval(function () {
+      return true;
+    }, 100);
+  };
+
+  LS.prototype.clear = function () {
+    localStorage.clear();
+    setInterval(function () {
+      return true;
+    }, 100);
+  };
+
+  LS.prototype.check = function (what) {
+    if (!localStorage.getItem(what) || localStorage.getItem(what) === '' || localStorage.getItem(what) === 'undefined' || localStorage.getItem(what) === null) {
+      return false;
     }
-  }]);
 
-  return LS;
-}();
-
-module.exports.LS = LS;
+    return true;
+  };
+};
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -203,7 +182,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53878" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65517" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
