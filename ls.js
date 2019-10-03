@@ -1,6 +1,4 @@
-"use strict";
-
-let LS = () => {
+export function LS() {
     LS.prototype.get = (what) => {
         return JSON.parse(localStorage.getItem(what));
     }
@@ -30,5 +28,3 @@ let LS = () => {
         return true;
     }
 }
-
-module.exports.LS = LS;
