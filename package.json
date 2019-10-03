@@ -1,5 +1,5 @@
 {
-  "name": "simple-localstorage",
+  "name": "tiny-localstorage",
   "version": "1.0.0",
   "description": "Just a simple HTML5/JS Local Storage things to store and get stuff!",
   "main": "ls.js",
