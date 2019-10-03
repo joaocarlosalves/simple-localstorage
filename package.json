@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/joaocarlosalves/simple-localstorage/issues"
   },
-  "homepage": "https://github.com/joaocarlosalves/simple-localstorage#readme"
+  "homepage": "https://github.com/joaocarlosalves/simple-localstorage#readme",
+  "dependencies": {
+    "npm": "^6.11.3"
+  }
 }
