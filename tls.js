@@ -3,7 +3,7 @@
 
 class tinyLocalStorage {
     get(what) {
-        return JSON.parse(localStorage.getItem(what));
+        return JSON.parse(global.localStorage.getItem(what));
     }
 
     set(where, what) {
