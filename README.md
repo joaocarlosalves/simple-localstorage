@@ -7,7 +7,7 @@ Be sure you have Node JS installed.<br/>
 
 ## Usage
 First thing is import TLS<br/>
-`import TLS from 'tiny-localstorage';`<br/>
+`import TLS from 'tiny-localstorage'`<br/>
 
 Now, you can save TLS into a variable (optional, you can use directly)<br/>
 `let tls = TLS`<br/><br/>
