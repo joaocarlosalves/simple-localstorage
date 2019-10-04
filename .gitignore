@@ -1,4 +1,10 @@
+.gitignore
+/.gitignore
 node_modules
+/node_modules
 dist
+/dist
 .cache
+/.cache
+/package-lock.json
 package-lock.json
