@@ -7,18 +7,15 @@ class tinyLocalStorage {
     }
 
     set(where, what) {
-        global.localStorage.setItem(where, JSON.stringify(what));
-        setInterval(() => { return true }, 100);
+        global.localStorage.setItem(where, JSON.stringify(what));        
     }
 
     delete(what) {
         global.localStorage.removeItem(what);
-        setInterval(() => { return true }, 100);
     }
 
     clear() {
-        global.localStorage.clear();
-        setInterval(() => { return true }, 100);
+        global.localStorage.clear();        
     }
 
     check(what) {
