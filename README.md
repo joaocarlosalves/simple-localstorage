@@ -21,14 +21,19 @@ Insert one item like a json object or some variable passing its name as string t
 
 • **GET**<br/>
 Get one item passing its name as string parameter<br/>
-`tls.set("itemName", itemContent)`
-<br/>
+`tls.get("itemName")`<br/>
 
 • **DELETE**<br/>
 Delete one item passing its name in string format as parameter<br/>
-`tls.delete("itemName")`<br/>
+`tls.del("itemName")`<br/>
+
+• **CHECK**<br/>
+Return true if exist a item passing its name as string parameter<br/>
+`tls.chk("itemName")`<br/>
 
 • **CLEAR**<br/>
 ...and all storage is gone! Forever...<br/>
-`tls.clear()`<br/><br/>
+`tls.clr()`<br/><br/>
+
+
 

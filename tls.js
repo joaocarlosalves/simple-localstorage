@@ -10,15 +10,11 @@ class tinyLocalStorage {
         global.localStorage.setItem(where, JSON.stringify(what));        
     }
 
-    delete(what) {
+    del(what) {
         global.localStorage.removeItem(what);
     }
 
-    clear() {
-        global.localStorage.clear();        
-    }
-
-    check(what) {
+    chk(what) {
         if(
             !global.localStorage.getItem(what) 
             || global.localStorage.getItem(what) === '' 
@@ -26,6 +22,10 @@ class tinyLocalStorage {
             || global.localStorage.getItem(what) === null
         ){ return false; } 
         return true;
+    }
+
+    clr() {
+        global.localStorage.clear();        
     }
 };
 
